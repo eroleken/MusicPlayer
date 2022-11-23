@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Müzik Oynatıcı</title>
+    <!-- for bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- for css -->
+    <link rel="stylesheet" href="player.css">
+    <!-- for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+  </head>
+  <body class="d-flex justify-content-center my-4">
+    <div class="card">
+
+      <img src="" alt="" id="sarkiResim" onclick="tool.play(audio)">
+      <p id="sarkiTanitim" class="pb-3 border-bottom"> </p>
+      <div id="progress">
+        <input type="range" class="progress-bar w-100" aria-describedby="aralık" class="form-range" value="0"> </input>
+        <div id="sureler" class="d-flex justify-content-between mx-1 text-primary">
+          <span id="bas">0:00</span>
+          <span id="son">0:00</span>
+        </div>
+      </div>
+
+      <audio id="kilam" src="">
+
+      </audio>
+     
+      <div class="d-flex justify-content-center mt-2 pb-3 border-bottom">
+        <i class="fa-solid fa-backward-step fa-1.5x bg-primary circle" onclick="back()"></i>
+        <i id="played" class="fa-solid fa-circle-play text-primary fa-3x" onclick="tool.play(audio)"></i>
+       
+        <i class="fa-solid fa-forward-step fa-1.5x bg-primary circle" onclick="fwrd()"></i>
+      </div>
+
+
+      <div class="d-flex pt-2">
+        <i class="fa fa-bars" id="toggle" data-bs-toggle="collapse" href="#collapseExample" role="button" ></i>
+          <div id="volume" class="ms-auto d-flex me-2">
+            <i id="volume-icon" class="fa-solid fa-volume-high text-primary my-auto ms-1" onclick="tool.volume()"></i>
+            <input type="range" id="volume-bar" aria-describedby="aralık" max="100" min="0"></input>
+          </div>
+      </div>
+      <div class="card-body collapse mt-1" id="collapseExample">
+        <ul class="list-group mt-0" id="sarkilar">
+        </ul>
+      </div>
+    </div>
+    
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    
+    <script src="js/tools.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/songs.js"></script>
+    <script src="js/app.js"></script>
+    
+
+  </body>
+</html>

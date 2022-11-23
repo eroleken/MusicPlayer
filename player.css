@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#player{
+    width: 400px;
+    height:fit-content;
+}
+body{
+    height: 100vh;
+}
+.card{
+    display: inline-flex;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 533px;
+}
+
+#figCaption{
+    text-align: center;
+}
+.list-group{
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+#toggle{
+    margin-left: 17px;
+    font-size: 28px;
+    color: blue;
+    display: inline-flex;
+}
+.card-body{
+    margin: 0;
+    padding: 0;
+    height:fit-content;
+}
+.list-group-item:hover{
+    background-color: rgb(31, 31, 226);
+    color: white;
+}
+.sure{
+    background-color: rgb(88, 88, 187);
+    color: white;
+    /* border: 1px solid rgb(31, 31, 226); */
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 0.9rem;
+}
+.ative{
+    background-color: rgb(31, 31, 226);
+    color: white;
+}
+.circle{
+    border-radius: 50%;
+    border: solid;
+    padding: 8px 11px;
+    color: #fff;
+    margin: 5px;
+}
+
+#surec{
+    content: "";
+    height: 7px;
+    border-radius: 5px;
+    width: 80%;
+    position: relative;
+}
+#progress-bar{
+    width: 100%;
+}
+#tamamlanan{
+    content: "";
+    background-color: rgb(83, 13, 41);
+    height: 7px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 0;
+}
+
+#volume{
+    content: "";
+    width: 50%;
+}
+#progress{
+    height: 40px;
+}
